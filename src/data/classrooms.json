@@ -1,0 +1,3760 @@
+[
+  {
+    "id": "th2-108",
+    "roomId": "TH2.108",
+    "roomName": "Phòng Thực hành hệ thống Máy lạnh Công nghiệp 1",
+    "teacherId": "tran-thanh-tu",
+    "teacherName": "Trần Thanh Tú",
+    "modules": [
+      "Hệ thống máy lạnh công nghiệp 1"
+    ],
+    "roomImage": "/images/layouts/th2-108.png",
+    "stats": {
+      "totalEquipments": 60,
+      "totalTSCD": 15,
+      "totalCCDC": 45,
+      "totalValue": 2413774430
+    },
+    "equipments": [
+      {
+        "id": "DA.23.HTĐKTT.01",
+        "type": "TSCĐ",
+        "name": "Hệ thống điều khiển trung tâm (TPAL.I0300)",
+        "code": "DA.23.HTĐKTT.01",
+        "quantity": 1,
+        "note": "37",
+        "specification": "TPAL.I0300",
+        "status": "Đang sử dụng",
+        "originalPrice": 652542000
+      },
+      {
+        "id": "DA.23.MTHCML.01",
+        "type": "TSCĐ",
+        "name": "Máy thu hồi môi chất lạnh (220v- 50/60Hz) (95764)",
+        "code": "DA.23.MTHCML.01",
+        "quantity": 1,
+        "note": "38",
+        "specification": "95764",
+        "status": "Đang sử dụng",
+        "originalPrice": 55561000
+      },
+      {
+        "id": "DA.23.MHMLK.01",
+        "type": "TSCĐ",
+        "name": "Mô hình máy làm kem (TPAL.G0100)",
+        "code": "DA.23.MHMLK.01",
+        "quantity": 1,
+        "note": "45",
+        "specification": "TPAL.G0100",
+        "status": "Đang sử dụng",
+        "originalPrice": 403609500
+      },
+      {
+        "id": "DA.BHH1901",
+        "type": "TSCĐ",
+        "name": "Bộ hàn hơi",
+        "code": "DA.BHH1901",
+        "quantity": 1,
+        "note": "81",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34800000
+      },
+      {
+        "id": "DA.BTBH1801",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị hàn, cắt bằng khí",
+        "code": "DA.BTBH1801",
+        "quantity": 1,
+        "note": "105",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 35384869
+      },
+      {
+        "id": "DA.CMNDN1801",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1801",
+        "quantity": 1,
+        "note": "130",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1802",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1802",
+        "quantity": 1,
+        "note": "131",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.DCNOĐ1801",
+        "type": "TSCĐ",
+        "name": "Dụng cụ nong ống đồng",
+        "code": "DA.DCNOĐ1801",
+        "quantity": 1,
+        "note": "145",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 15831457
+      },
+      {
+        "id": "DA.DCNOĐ1802",
+        "type": "TSCĐ",
+        "name": "'Dụng cụ nong ống đồng",
+        "code": "DA.DCNOĐ1802",
+        "quantity": 1,
+        "note": "146",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 15831457
+      },
+      {
+        "id": "DA.DCTTOĐ1801",
+        "type": "TSCĐ",
+        "name": "Dụng cụ tạo T ống đồng",
+        "code": "DA.DCTTOĐ1801",
+        "quantity": 1,
+        "note": "151",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34158040
+      },
+      {
+        "id": "DA.MCW1801",
+        "type": "TSCĐ",
+        "name": "Máy chiếu kết nối wireless",
+        "code": "DA.MCW1801",
+        "quantity": 1,
+        "note": "157",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 24251369
+      },
+      {
+        "id": "DA.MHHTLHC1801",
+        "type": "TSCĐ",
+        "name": "Mô hình hệ thống lạnh 2 cấp",
+        "code": "DA.MHHTLHC1801",
+        "quantity": 2,
+        "note": "160",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 480815908
+      },
+      {
+        "id": "NS.BTH180109",
+        "type": "TSCĐ",
+        "name": "Tủ đựng thiết bị chuẩn Module A4 cửa kính (VN, TPAD.B6103,TPA)",
+        "code": "NS.BTH180109",
+        "quantity": 1,
+        "note": "161",
+        "specification": "VN, TPAD.B6103,TPA",
+        "status": "Đang sử dụng",
+        "originalPrice": 24500000
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 12,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 25,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      },
+      {
+        "id": "Hp.Quat19-05",
+        "type": "CCDC",
+        "name": "Quạt Bảo Hộ Đứng",
+        "code": "Hp.Quat19-05",
+        "quantity": 1,
+        "note": "14",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1600000
+      },
+      {
+        "id": "DA.23.MHCK",
+        "type": "CCDC",
+        "name": "Máy hút chân không hai cấp (VE260N)",
+        "code": "DA.23.MHCK",
+        "quantity": 3,
+        "note": "45",
+        "specification": "VE260N",
+        "status": "Đang sử dụng",
+        "originalPrice": 882200
+      },
+      {
+        "id": "TUTHUOC04",
+        "type": "TSCĐ",
+        "name": "Tủ thuốc",
+        "code": "TUTHUOC04",
+        "quantity": 1,
+        "note": "43",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1
+      }
+    ]
+  },
+  {
+    "id": "th2-201",
+    "roomId": "TH2.201",
+    "roomName": "Phòng Thực hành lạnh cơ bản",
+    "teacherId": "nguyen-van-phanh",
+    "teacherName": "Nguyễn Văn Phảnh",
+    "modules": [
+      "Lạnh cơ bản",
+      "Máy điện"
+    ],
+    "roomImage": "/images/layouts/th2-201.png",
+    "stats": {
+      "totalEquipments": 68,
+      "totalTSCD": 8,
+      "totalCCDC": 60,
+      "totalValue": 883948404
+    },
+    "equipments": [
+      {
+        "id": "DA.23.BMN.01",
+        "type": "TSCĐ",
+        "name": "Bộ máy nén điều hòa không khí cắt bổ (TPAD.I0300)",
+        "code": "DA.23.BMN.01",
+        "quantity": 1,
+        "note": "24",
+        "specification": "TPAD.I0300",
+        "status": "Đang sử dụng",
+        "originalPrice": 143297000
+      },
+      {
+        "id": "DA.23.BMN.02",
+        "type": "TSCĐ",
+        "name": "Bộ máy nén điều hòa không khí cắt bổ (TPAD.I0300)",
+        "code": "DA.23.BMN.02",
+        "quantity": 1,
+        "note": "25",
+        "specification": "TPAD.I0300",
+        "status": "Đang sử dụng",
+        "originalPrice": 143297000
+      },
+      {
+        "id": "DA.23.BMN.03",
+        "type": "TSCĐ",
+        "name": "Bộ máy nén điều hòa không khí cắt bổ (TPAD.I0300)",
+        "code": "DA.23.BMN.03",
+        "quantity": 1,
+        "note": "26",
+        "specification": "TPAD.I0300",
+        "status": "Đang sử dụng",
+        "originalPrice": 143297000
+      },
+      {
+        "id": "DA.23.BMN.04",
+        "type": "TSCĐ",
+        "name": "Bộ máy nén điều hòa không khí cắt bổ (TPAD.I0300)",
+        "code": "DA.23.BMN.04",
+        "quantity": 1,
+        "note": "27",
+        "specification": "TPAD.I0300",
+        "status": "Đang sử dụng",
+        "originalPrice": 143297000
+      },
+      {
+        "id": "DA.23.BMN.05",
+        "type": "TSCĐ",
+        "name": "Bộ máy nén điều hòa không khí cắt bổ (TPAD.I0300)",
+        "code": "DA.23.BMN.05",
+        "quantity": 1,
+        "note": "28",
+        "specification": "TPAD.I0300",
+        "status": "Đang sử dụng",
+        "originalPrice": 143297000
+      },
+      {
+        "id": "DA.BTBH1808",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị hàn, cắt bằng khí",
+        "code": "DA.BTBH1808",
+        "quantity": 2,
+        "note": "105",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 35384869
+      },
+      {
+        "id": "NS.BHH",
+        "type": "TSCĐ",
+        "name": "Bộ hàn hơi (gió đá) gồm: 1 bình khí gió, 1 bình khí đá,1 mỏ hàn 3 đầu béc dầu, 1 mỏ cắt, 2 đồng hồ đo áp lực, 2d dẫn hơi, kính hàn, 1 cặp bao tay",
+        "code": "NS.BHH",
+        "quantity": 1,
+        "note": "191",
+        "specification": "gió đá",
+        "status": "Đang sử dụng",
+        "originalPrice": 7500000
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 19,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 2,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 32,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      },
+      {
+        "id": "QCN",
+        "type": "CCDC",
+        "name": "Quạt công nghiệp",
+        "code": "QCN",
+        "quantity": 1,
+        "note": "35",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "TM",
+        "type": "CCDC",
+        "name": "Tủ Mỹ 2 ngăn",
+        "code": "TM",
+        "quantity": 3,
+        "note": "42",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      }
+    ]
+  },
+  {
+    "id": "th2-202",
+    "roomId": "TH2.202",
+    "roomName": "Phòng Thực hành Điều hòa Không khí cục bộ 3",
+    "teacherId": "nguyen-van-phanh",
+    "teacherName": "Nguyễn Văn Phảnh",
+    "modules": [
+      "Hệ thống điều hòa không khí cục bộ"
+    ],
+    "roomImage": "/images/layouts/th2-202.png",
+    "stats": {
+      "totalEquipments": 53,
+      "totalTSCD": 13,
+      "totalCCDC": 40,
+      "totalValue": 1752580565
+    },
+    "equipments": [
+      {
+        "id": "DA.23.BTHĐHĐGL.01",
+        "type": "TSCĐ",
+        "name": "Bộ thực hành điều hòa đa giàn lạnh (TPAL.B0210)",
+        "code": "DA.23.BTHĐHĐGL.01",
+        "quantity": 1,
+        "note": "29",
+        "specification": "TPAL.B0210",
+        "status": "Đang sử dụng",
+        "originalPrice": 524821500
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1801",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1801",
+        "quantity": 1,
+        "note": "87",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1802",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1802",
+        "quantity": 1,
+        "note": "88",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1803",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1803",
+        "quantity": 1,
+        "note": "89",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1804",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1804",
+        "quantity": 1,
+        "note": "90",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1805",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1805",
+        "quantity": 1,
+        "note": "91",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1806",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1806",
+        "quantity": 1,
+        "note": "92",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1801",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1801",
+        "quantity": 1,
+        "note": "112",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1802",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1802",
+        "quantity": 1,
+        "note": "113",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1803",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1803",
+        "quantity": 1,
+        "note": "114",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1804",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1804",
+        "quantity": 1,
+        "note": "115",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1805",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1805",
+        "quantity": 1,
+        "note": "116",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1806",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1806",
+        "quantity": 1,
+        "note": "117",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 6,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 27,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      },
+      {
+        "id": "Hp.Quat19-05",
+        "type": "CCDC",
+        "name": "Quạt Bảo Hộ Đứng",
+        "code": "Hp.Quat19-05",
+        "quantity": 1,
+        "note": "14",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1600000
+      },
+      {
+        "id": "SN.KE02",
+        "type": "CCDC",
+        "name": "Kệ thép 4 ngăn (1,52*0,5*1,58)m (thư viện)",
+        "code": "SN.KE02",
+        "quantity": 1,
+        "note": "36",
+        "specification": "thư viện",
+        "status": "Đang sử dụng",
+        "originalPrice": 700000
+      },
+      {
+        "id": "TM",
+        "type": "CCDC",
+        "name": "Tủ Mỹ 2 ngăn",
+        "code": "TM",
+        "quantity": 1,
+        "note": "42",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      }
+    ]
+  },
+  {
+    "id": "th2-203",
+    "roomId": "TH2.203",
+    "roomName": "Phòng Thực hành Điều hòa Không khí cục bộ 2",
+    "teacherId": "nguyen-lan-phuong",
+    "teacherName": "Nguyễn Lan Phương",
+    "modules": [
+      "Hệ thống điều hòa không khí cục bộ"
+    ],
+    "roomImage": "/images/layouts/th2-203.png",
+    "stats": {
+      "totalEquipments": 54,
+      "totalTSCD": 20,
+      "totalCCDC": 34,
+      "totalValue": 1900130329
+    },
+    "equipments": [
+      {
+        "id": "DA.23.BTHĐHĐGL.02",
+        "type": "TSCĐ",
+        "name": "Bộ thực hành điều hòa đa giàn lạnh (TPAL.B0210)",
+        "code": "DA.23.BTHĐHĐGL.02",
+        "quantity": 1,
+        "note": "29",
+        "specification": "TPAL.B0210",
+        "status": "Đang sử dụng",
+        "originalPrice": 524821500
+      },
+      {
+        "id": "HP.MVT150005",
+        "type": "TSCĐ",
+        "name": "Máy tính Elead T7150",
+        "code": "HP.MVT150005",
+        "quantity": 1,
+        "note": "69",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 14920000
+      },
+      {
+        "id": "HP2.MVT1709",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1709",
+        "quantity": 1,
+        "note": "70",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "HP2.MVT1710",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1710",
+        "quantity": 1,
+        "note": "79",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1807",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1807",
+        "quantity": 1,
+        "note": "93",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1808",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1808",
+        "quantity": 1,
+        "note": "94",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1809",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1809",
+        "quantity": 1,
+        "note": "95",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1810",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1810",
+        "quantity": 1,
+        "note": "96",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1811",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1811",
+        "quantity": 1,
+        "note": "97",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1812",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1812",
+        "quantity": 1,
+        "note": "98",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBH1806",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị hàn, cắt bằng khí",
+        "code": "DA.BTBH1806",
+        "quantity": 1,
+        "note": "110",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 35384869
+      },
+      {
+        "id": "DA.BTBH1807",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị hàn, cắt bằng khí",
+        "code": "DA.BTBH1807",
+        "quantity": 1,
+        "note": "111",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 35384869
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1807",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1807",
+        "quantity": 1,
+        "note": "118",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1808",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1808",
+        "quantity": 1,
+        "note": "119",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1809",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1809",
+        "quantity": 1,
+        "note": "120",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1810",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1810",
+        "quantity": 1,
+        "note": "121",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1811",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1811",
+        "quantity": 1,
+        "note": "122",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1812",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1812",
+        "quantity": 1,
+        "note": "123",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.DCNOĐ1803",
+        "type": "TSCĐ",
+        "name": "'Dụng cụ nong ống đồng",
+        "code": "DA.DCNOĐ1803",
+        "quantity": 1,
+        "note": "147",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 15831457
+      },
+      {
+        "id": "DA.MCW1802",
+        "type": "TSCĐ",
+        "name": "Máy chiếu kết nối wireless",
+        "code": "DA.MCW1802",
+        "quantity": 1,
+        "note": "158",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 24251369
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 9,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 17,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      },
+      {
+        "id": "QCN",
+        "type": "CCDC",
+        "name": "Quật công nghiệp",
+        "code": "QCN",
+        "quantity": 1,
+        "note": "35",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "TM",
+        "type": "CCDC",
+        "name": "Tủ Mỹ 2 ngăn",
+        "code": "TM",
+        "quantity": 2,
+        "note": "42",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "DA.23.MHCK",
+        "type": "CCDC",
+        "name": "Máy hút chân không hai cấp (VE260N)",
+        "code": "DA.23.MHCK",
+        "quantity": 1,
+        "note": "45",
+        "specification": "VE260N",
+        "status": "Đang sử dụng",
+        "originalPrice": 882200
+      }
+    ]
+  },
+  {
+    "id": "th2-204",
+    "roomId": "TH2.204",
+    "roomName": "Văn phòng khoa Công nghệ Nhiệt lạnh",
+    "teacherId": "van-phong-khoa",
+    "teacherName": "Văn Phòng Khoa",
+    "modules": [],
+    "roomImage": "/images/layouts/th2-204.png",
+    "stats": {
+      "totalEquipments": 25,
+      "totalTSCD": 11,
+      "totalCCDC": 14,
+      "totalValue": 133916662
+    },
+    "equipments": [
+      {
+        "id": "NS.BAN1801",
+        "type": "TSCĐ",
+        "name": "bàn họp ( DXRXC)(2.4*1.2*0.76m)",
+        "code": "NS.BAN1801",
+        "quantity": 1,
+        "note": "46",
+        "specification": "2.4*1.2*0.76m",
+        "status": "Đang sử dụng",
+        "originalPrice": 10500000
+      },
+      {
+        "id": "NS.MC1706",
+        "type": "TSCĐ",
+        "name": "Máy chiếu kết nối wireless, TQ, VPL-DX240 Sony",
+        "code": "NS.MC1706",
+        "quantity": 1,
+        "note": "47",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 20000000
+      },
+      {
+        "id": "NS.MC1707",
+        "type": "TSCĐ",
+        "name": "Máy chiếu kết nối wireless, TQ, VPL-DX240 Sony",
+        "code": "NS.MC1707",
+        "quantity": 1,
+        "note": "48",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 20000000
+      },
+      {
+        "id": "NS.BAN.18001",
+        "type": "TSCĐ",
+        "name": "Bàn làm việc của Phòng Khoa (kt: 1.2*0.6*0.76m)",
+        "code": "NS.BAN.18001",
+        "quantity": 1,
+        "note": "181",
+        "specification": "kt: 1.2*0.6*0.76m",
+        "status": "Đang sử dụng",
+        "originalPrice": 8400000
+      },
+      {
+        "id": "NS.BAN.18002",
+        "type": "TSCĐ",
+        "name": "Bàn làm việc của Phòng Khoa (kt: 1.2*0.6*0.76m)",
+        "code": "NS.BAN.18002",
+        "quantity": 1,
+        "note": "182",
+        "specification": "kt: 1.2*0.6*0.76m",
+        "status": "Đang sử dụng",
+        "originalPrice": 8400000
+      },
+      {
+        "id": "NS.BAN.18003",
+        "type": "TSCĐ",
+        "name": "Bàn làm việc của Phòng Khoa (kt: 1.2*0.6*0.76m)",
+        "code": "NS.BAN.18003",
+        "quantity": 1,
+        "note": "183",
+        "specification": "kt: 1.2*0.6*0.76m",
+        "status": "Đang sử dụng",
+        "originalPrice": 8400000
+      },
+      {
+        "id": "NS.BAN.18004",
+        "type": "TSCĐ",
+        "name": "Bàn làm việc của Phòng Khoa (kt: 1.2*0.6*0.76m)",
+        "code": "NS.BAN.18004",
+        "quantity": 1,
+        "note": "184",
+        "specification": "kt: 1.2*0.6*0.76m",
+        "status": "Đang sử dụng",
+        "originalPrice": 8400000
+      },
+      {
+        "id": "NS.KBT1803",
+        "type": "TSCĐ",
+        "name": "Kệ 4 tầng ( kt : 2.00*1.00*0.4m)",
+        "code": "NS.KBT1803",
+        "quantity": 1,
+        "note": "185",
+        "specification": "kt : 2.00*1.00*0.4m",
+        "status": "Đang sử dụng",
+        "originalPrice": 6825000
+      },
+      {
+        "id": "NS.KBT1810",
+        "type": "TSCĐ",
+        "name": "Kệ 4 tầng ( kt : 2.00*1.00*0.4m)",
+        "code": "NS.KBT1810",
+        "quantity": 1,
+        "note": "186",
+        "specification": "kt : 2.00*1.00*0.4m",
+        "status": "Đang sử dụng",
+        "originalPrice": 6825000
+      },
+      {
+        "id": "NS.TĐHS1810",
+        "type": "TSCĐ",
+        "name": "Tủ đựng hồ sơ , cửa 2 cánh, kính trắng dày 5 mm (kt : DXRXC, , 1.4*0.4*2.0m)",
+        "code": "NS.TĐHS1810",
+        "quantity": 1,
+        "note": "189",
+        "specification": "kt : DXRXC, , 1.4*0.4*2.0m",
+        "status": "Đang sử dụng",
+        "originalPrice": 9975000
+      },
+      {
+        "id": "NS.TĐHS1811",
+        "type": "TSCĐ",
+        "name": "Tủ đựng hồ sơ , cửa 2 cánh, kính trắng dày 5 mm (kt : DXRXC, , 1.4*0.4*2.0m)",
+        "code": "NS.TĐHS1811",
+        "quantity": 1,
+        "note": "190",
+        "specification": "kt : DXRXC, , 1.4*0.4*2.0m",
+        "status": "Đang sử dụng",
+        "originalPrice": 9975000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 14,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      }
+    ]
+  },
+  {
+    "id": "th2-205",
+    "roomId": "TH2.205",
+    "roomName": "Phòng Thực hành Điều hòa Không khí cục bộ 1",
+    "teacherId": "tran-thanh-tu",
+    "teacherName": "Trần Thanh Tú",
+    "modules": [
+      "Hệ thống điều hòa không khí cục bộ"
+    ],
+    "roomImage": "/images/layouts/th2-205.png",
+    "stats": {
+      "totalEquipments": 53,
+      "totalTSCD": 15,
+      "totalCCDC": 38,
+      "totalValue": 1823756336
+    },
+    "equipments": [
+      {
+        "id": "DA.23.BTHĐHĐGL.03",
+        "type": "TSCĐ",
+        "name": "Bộ thực hành điều hòa đa giàn lạnh (TPAL.B0210)",
+        "code": "DA.23.BTHĐHĐGL.03",
+        "quantity": 1,
+        "note": "31",
+        "specification": "TPAL.B0210",
+        "status": "Đang sử dụng",
+        "originalPrice": 524821500
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1813",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1813",
+        "quantity": 1,
+        "note": "99",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1814",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1814",
+        "quantity": 1,
+        "note": "100",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1815",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1815",
+        "quantity": 1,
+        "note": "101",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1816",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1816",
+        "quantity": 1,
+        "note": "102",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1817",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1817",
+        "quantity": 1,
+        "note": "103",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBTHKNLĐĐL1818",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị dùng cho thực hành kỹ năng lắp đặt điện lạnh",
+        "code": "DA.BTBTHKNLĐĐL1818",
+        "quantity": 1,
+        "note": "104",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 148875168
+      },
+      {
+        "id": "DA.BTBH1805",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị hàn, cắt bằng khí",
+        "code": "DA.BTBH1805",
+        "quantity": 2,
+        "note": "109",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 35384869
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1813",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1813",
+        "quantity": 1,
+        "note": "124",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1814",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1814",
+        "quantity": 1,
+        "note": "125",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1815",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1815",
+        "quantity": 1,
+        "note": "126",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1816",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1816",
+        "quantity": 1,
+        "note": "127",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1817",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1817",
+        "quantity": 1,
+        "note": "128",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.CTHLĐHTĐL1818",
+        "type": "TSCĐ",
+        "name": "Cabin thực hành lắp đặt hệ thống điện lạnh",
+        "code": "DA.CTHLĐHTĐL1818",
+        "quantity": 1,
+        "note": "129",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 46636704
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 9,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 2,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 20,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      },
+      {
+        "id": "Hp.Quat19-05",
+        "type": "CCDC",
+        "name": "Quạt Bảo Hộ Đứng",
+        "code": "Hp.Quat19-05",
+        "quantity": 1,
+        "note": "14",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1600000
+      },
+      {
+        "id": "TM",
+        "type": "CCDC",
+        "name": "Tủ Mỹ 2 ngăn",
+        "code": "TM",
+        "quantity": 2,
+        "note": "42",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "DA.23.MHCK",
+        "type": "CCDC",
+        "name": "Máy hút chân không hai cấp (VE260N)",
+        "code": "DA.23.MHCK",
+        "quantity": 1,
+        "note": "45",
+        "specification": "VE260N",
+        "status": "Đang sử dụng",
+        "originalPrice": 882200
+      }
+    ]
+  },
+  {
+    "id": "th2-208",
+    "roomId": "TH2.208",
+    "roomName": "Phòng Thực hành Điều hòa Không khí trung tâm 1",
+    "teacherId": "nguyen-lan-phuong",
+    "teacherName": "Nguyễn Lan Phương",
+    "modules": [
+      "Hệ thống điều hòa Không khí trung tâm"
+    ],
+    "roomImage": "/images/layouts/th2-208.png",
+    "stats": {
+      "totalEquipments": 52,
+      "totalTSCD": 4,
+      "totalCCDC": 48,
+      "totalValue": 1906241143
+    },
+    "equipments": [
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 16,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 2,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 23,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      },
+      {
+        "id": "Hp.Quat19-05",
+        "type": "CCDC",
+        "name": "Quạt Bảo Hộ Đứng",
+        "code": "Hp.Quat19-05",
+        "quantity": 1,
+        "note": "14",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1600000
+      },
+      {
+        "id": "QCN",
+        "type": "CCDC",
+        "name": "Quạt công nghiệp",
+        "code": "QCN",
+        "quantity": 1,
+        "note": "35",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "TM",
+        "type": "CCDC",
+        "name": "Tủ Mỹ 2 ngăn",
+        "code": "TM",
+        "quantity": 2,
+        "note": "42",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "HP.MHHTĐHKKTTAHU1801",
+        "type": "TSCĐ",
+        "name": "Mô hình hệ thống điều hòa không khí trung tâm AHU gas",
+        "code": "HP.MHHTĐHKKTTAHU1801",
+        "quantity": 1,
+        "note": "178",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 638646663
+      },
+      {
+        "id": "HP.MHHTĐHKK1802",
+        "type": "TSCĐ",
+        "name": "Mô hình hệ thống điều hòa không khí trung tâm water chiller giải nhiệt nước",
+        "code": "HP.MHHTĐHKK1802",
+        "quantity": 1,
+        "note": "179",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 720526724
+      },
+      {
+        "id": "HP.MHHTL1801",
+        "type": "TSCĐ",
+        "name": "Mô hình hệ thống lạnh tủ đông tiếp xúc",
+        "code": "HP.MHHTL1801",
+        "quantity": 1,
+        "note": "180",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 346816324
+      },
+      {
+        "id": "HP.MHDTTĐ1801",
+        "type": "TSCĐ",
+        "name": "Mô hình dàn trải tủ đông gió",
+        "code": "HP.MHDTTĐ1801",
+        "quantity": 1,
+        "note": "177",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 126499266
+      }
+    ]
+  },
+  {
+    "id": "th2-209",
+    "roomId": "TH2.209",
+    "roomName": "Phòng Thực hành Điều hòa Không khí trung tâm 2",
+    "teacherId": "tran-minh-khoa",
+    "teacherName": "Trần Minh Khoa",
+    "modules": [
+      "Hệ thống điều hòa Không khí trung tâm"
+    ],
+    "roomImage": "/images/layouts/th2-209.png",
+    "stats": {
+      "totalEquipments": 41,
+      "totalTSCD": 6,
+      "totalCCDC": 35,
+      "totalValue": 1950883179
+    },
+    "equipments": [
+      {
+        "id": "NS.BTH180110",
+        "type": "TSCĐ",
+        "name": "Tủ đựng thiết bị chuẩn Module A4 cửa kính (VN, TPAD.B6103,TPA)",
+        "code": "NS.BTH180110",
+        "quantity": 1,
+        "note": "162",
+        "specification": "VN, TPAD.B6103,TPA",
+        "status": "Đang sử dụng",
+        "originalPrice": 24500000
+      },
+      {
+        "id": "HP.MHDTTĐ1801",
+        "type": "TSCĐ",
+        "name": "Mô hình dàn trải tủ đông gió",
+        "code": "HP.MHDTTĐ1801",
+        "quantity": 1,
+        "note": "177",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 126499266
+      },
+      {
+        "id": "HP.MHHTĐHKKTTAHU1801",
+        "type": "TSCĐ",
+        "name": "Mô hình hệ thống điều hòa không khí trung tâm AHU gas",
+        "code": "HP.MHHTĐHKKTTAHU1801",
+        "quantity": 1,
+        "note": "178",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 638646663
+      },
+      {
+        "id": "HP.MHHTĐHKK1802",
+        "type": "TSCĐ",
+        "name": "Mô hình hệ thống điều hòa không khí trung tâm water chiller giải nhiệt nước",
+        "code": "HP.MHHTĐHKK1802",
+        "quantity": 1,
+        "note": "179",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 720526724
+      },
+      {
+        "id": "HP.MHHTL1801",
+        "type": "TSCĐ",
+        "name": "Mô hình hệ thống lạnh tủ đông tiếp xúc",
+        "code": "HP.MHHTL1801",
+        "quantity": 1,
+        "note": "180",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 346816324
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 14,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 16,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      },
+      {
+        "id": "TM",
+        "type": "CCDC",
+        "name": "Tủ Mỹ 2 ngăn",
+        "code": "TM",
+        "quantity": 1,
+        "note": "42",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "DA.BTBH1803",
+        "type": "TSCĐ",
+        "name": "Bộ thiết bị hàn, cắt bằng khí",
+        "code": "DA.BTBH1803",
+        "quantity": 1,
+        "note": "107",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 35384869
+      }
+    ]
+  },
+  {
+    "id": "th2-210",
+    "roomId": "TH2.210",
+    "roomName": "Phòng Thực hành Điều hòa Không khí trung tâm 3",
+    "teacherId": "tran-thanh-tung",
+    "teacherName": "Trần Thanh Tùng",
+    "modules": [
+      "Hệ thống điều hòa Không khí trung tâm",
+      "Hệ thống máy lạnh dân dụng và thương nghiệp"
+    ],
+    "roomImage": "/images/layouts/th2-210.png",
+    "stats": {
+      "totalEquipments": 57,
+      "totalTSCD": 7,
+      "totalCCDC": 50,
+      "totalValue": 2292113340
+    },
+    "equipments": [
+      {
+        "id": "DA.CMNDN1808",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1808",
+        "quantity": 1,
+        "note": "137",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1809",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1809",
+        "quantity": 1,
+        "note": "138",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1810",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1810",
+        "quantity": 1,
+        "note": "139",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1811",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1811",
+        "quantity": 1,
+        "note": "140",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.MHVRV1801",
+        "type": "TSCĐ",
+        "name": "'Mô hình dàn trải hệ thống điều hoà trung tâm VRV",
+        "code": "DA.MHVRV1801",
+        "quantity": 2,
+        "note": "159",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1016806765
+      },
+      {
+        "id": "NS.BTH180111",
+        "type": "TSCĐ",
+        "name": "Tủ đựng thiết bị chuẩn Module A4 cửa kính (VN, TPAD.B6103,TPA)",
+        "code": "NS.BTH180111",
+        "quantity": 1,
+        "note": "163",
+        "specification": "VN, TPAD.B6103,TPA",
+        "status": "Đang sử dụng",
+        "originalPrice": 24500000
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 9,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 23,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      },
+      {
+        "id": "SN.KE02",
+        "type": "CCDC",
+        "name": "Kệ thép 4 ngăn (1,52*0,5*1,58)m (thư viện)",
+        "code": "SN.KE02",
+        "quantity": 1,
+        "note": "",
+        "specification": "thư viện",
+        "status": "Đang sử dụng",
+        "originalPrice": 700000
+      },
+      {
+        "id": "TM",
+        "type": "CCDC",
+        "name": "Tủ Mỹ 2 ngăn",
+        "code": "TM",
+        "quantity": 6,
+        "note": "42",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "TUTOL",
+        "type": "CCDC",
+        "name": "Tủ tol 3 ngăn nhỏ",
+        "code": "TUTOL",
+        "quantity": 4,
+        "note": "44",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "BCK",
+        "type": "CCDC",
+        "name": "Bơm chân không 2 cấp 15601",
+        "code": "BCK",
+        "quantity": 1,
+        "note": "1",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1
+      },
+      {
+        "id": "SN.MNEN02",
+        "type": "CCDC",
+        "name": "Máy nén khí 220 V -1 HP /60 lít, áp suất làm việc 10 bar",
+        "code": "SN.MNEN02",
+        "quantity": 1,
+        "note": "41",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 3625000
+      },
+      {
+        "id": "QCN",
+        "type": "CCDC",
+        "name": "Quạt công nghiệp",
+        "code": "QCN",
+        "quantity": 1,
+        "note": "35",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      }
+    ]
+  },
+  {
+    "id": "th2-211",
+    "roomId": "TH2.211",
+    "roomName": "Phòng Kỹ thuật cơ sở",
+    "teacherId": "tran-thanh-tung",
+    "teacherName": "Trần Thanh Tùng",
+    "modules": [
+      "Tự động hóa hệ thống lạnh",
+      "Điện cơ bản"
+    ],
+    "roomImage": "/images/layouts/th2-211.png",
+    "stats": {
+      "totalEquipments": 65,
+      "totalTSCD": 8,
+      "totalCCDC": 57,
+      "totalValue": 4128080284
+    },
+    "equipments": [
+      {
+        "id": "DA.23.BĐTĐAKK.01",
+        "type": "TSCĐ",
+        "name": "Bộ đào tạo đo độ ẩm không khí (TE6)",
+        "code": "DA.23.BĐTĐAKK.01",
+        "quantity": 1,
+        "note": "1",
+        "specification": "TE6",
+        "status": "Đang sử dụng",
+        "originalPrice": 717622500
+      },
+      {
+        "id": "DA.23.BĐTCTL.01",
+        "type": "TSCĐ",
+        "name": "Bộ đào tạo nguyên lý của chu trình lạnh (EC1500V)",
+        "code": "DA.23.BĐTCTL.01",
+        "quantity": 1,
+        "note": "2",
+        "specification": "EC1500V",
+        "status": "Đang sử dụng",
+        "originalPrice": 841092000
+      },
+      {
+        "id": "DA.23.BĐTĐHKK.01",
+        "type": "TSCĐ",
+        "name": "Bộ đào tạo nguyên lý của điều hòa không khí (EC1501V)",
+        "code": "DA.23.BĐTĐHKK.01",
+        "quantity": 1,
+        "note": "3",
+        "specification": "EC1501V",
+        "status": "Đang sử dụng",
+        "originalPrice": 928935000
+      },
+      {
+        "id": "DA.23.BTHĐHĐGL.04",
+        "type": "TSCĐ",
+        "name": "Bộ thực hành điều hòa đa giàn lạnh (TPAL.B0210)",
+        "code": "DA.23.BTHĐHĐGL.04",
+        "quantity": 1,
+        "note": "32",
+        "specification": "TPAL.B0210",
+        "status": "Đang sử dụng",
+        "originalPrice": 524821500
+      },
+      {
+        "id": "DA.23.BTHĐHĐGL.05",
+        "type": "TSCĐ",
+        "name": "Bộ thực hành điều hòa đa giàn lạnh (TPAL.B0210)",
+        "code": "DA.23.BTHĐHĐGL.05",
+        "quantity": 1,
+        "note": "33",
+        "specification": "TPAL.B0210",
+        "status": "Đang sử dụng",
+        "originalPrice": 524821500
+      },
+      {
+        "id": "NS.BĐTNLLL-MT1802",
+        "type": "TSCĐ",
+        "name": "Bộ đào tạo nguyên lý làm lạnh của tủ lạnh và điều hòa có kết nối máy tính",
+        "code": "NS.BĐTNLLL-MT1802",
+        "quantity": 1,
+        "note": "165",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 369950428
+      },
+      {
+        "id": "HP.BĐTNLLL-MT1801",
+        "type": "TSCĐ",
+        "name": "Bộ đào tạo nguyên lý làm lạnh của tủ lạnh và điều hoà có kết nối máy tính",
+        "code": "HP.BĐTNLLL-MT1801",
+        "quantity": 1,
+        "note": "166",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 60606193
+      },
+      {
+        "id": "HP.MHDTĐH1801",
+        "type": "TSCĐ",
+        "name": "Mô hình dàn trải điều hòa ( Loại máy điều hòa không khí 2 chiều Inverter)",
+        "code": "HP.MHDTĐH1801",
+        "quantity": 1,
+        "note": "176",
+        "specification": "Loại máy điều hòa không khí 2 chiều Inverter",
+        "status": "Đang sử dụng",
+        "originalPrice": 69759830
+      },
+      {
+        "id": "QCN",
+        "type": "CCDC",
+        "name": "Quạt công nghiệp",
+        "code": "QCN",
+        "quantity": 1,
+        "note": "35",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "TM",
+        "type": "CCDC",
+        "name": "Tủ Mỹ 2 ngăn",
+        "code": "TM",
+        "quantity": 1,
+        "note": "42",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "TUTOL",
+        "type": "CCDC",
+        "name": "Tủ tol 3 ngăn nhỏ",
+        "code": "TUTOL",
+        "quantity": 1,
+        "note": "44",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 22,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 28,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      }
+    ]
+  },
+  {
+    "id": "th2-401",
+    "roomId": "TH2.401",
+    "roomName": "Phòng Thực hành Hệ thống Điều hòa Không khí Trung tâm 4",
+    "teacherId": "tran-minh-khoa",
+    "teacherName": "Trần Minh Khoa",
+    "modules": [
+      "Hệ thống điều hòa Không khí trung tâm"
+    ],
+    "roomImage": "/images/layouts/th2-401.png",
+    "stats": {
+      "totalEquipments": 53,
+      "totalTSCD": 2,
+      "totalCCDC": 51,
+      "totalValue": 2237322333
+    },
+    "equipments": [
+      {
+        "id": "DA.23.BTHVRF.01",
+        "type": "TSCĐ",
+        "name": "Bộ thực hành hệ thống VRF (TPAL.C6110)",
+        "code": "DA.23.BTHVRF.01",
+        "quantity": 1,
+        "note": "34",
+        "specification": "TPAL.C6110",
+        "status": "Đang sử dụng",
+        "originalPrice": 1160113500
+      },
+      {
+        "id": "DA.23.MHVRV.01",
+        "type": "TSCĐ",
+        "name": "Mô hình dàn trải hệ thống điều hoà trung tâm VRV (TPAL.C6010)",
+        "code": "DA.23.MHVRV.01",
+        "quantity": 1,
+        "note": "42",
+        "specification": "TPAL.C6010",
+        "status": "Đang sử dụng",
+        "originalPrice": 977056500
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 33,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 14,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      }
+    ]
+  },
+  {
+    "id": "th2-402",
+    "roomId": "TH2.402",
+    "roomName": "Phòng Thực hành Hệ thống Điều hòa Không khí Trung tâm 5",
+    "teacherId": "nguyen-van-phanh",
+    "teacherName": "Nguyễn Văn Phảnh",
+    "modules": [
+      "Hệ thống điều hòa Không khí trung tâm"
+    ],
+    "roomImage": "/images/layouts/th2-402.png",
+    "stats": {
+      "totalEquipments": 37,
+      "totalTSCD": 2,
+      "totalCCDC": 35,
+      "totalValue": 2197989333
+    },
+    "equipments": [
+      {
+        "id": "DA.23.BTHVRF.02",
+        "type": "TSCĐ",
+        "name": "Bộ thực hành hệ thống VRF (TPAL.C6110)",
+        "code": "DA.23.BTHVRF.02",
+        "quantity": 1,
+        "note": "35",
+        "specification": "TPAL.C6110",
+        "status": "Đang sử dụng",
+        "originalPrice": 1160113500
+      },
+      {
+        "id": "DA.23.MHVRV.02",
+        "type": "TSCĐ",
+        "name": "Mô hình dàn trải hệ thống điều hoà trung tâm VRV (TPAL.C6010)",
+        "code": "DA.23.MHVRV.02",
+        "quantity": 1,
+        "note": "43",
+        "specification": "TPAL.C6010",
+        "status": "Đang sử dụng",
+        "originalPrice": 977056500
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 15,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 16,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      }
+    ]
+  },
+  {
+    "id": "th2-403",
+    "roomId": "TH2.403",
+    "roomName": "Phòng thực hành máy lạnh dân dụng và thương nghiệp 1",
+    "teacherId": "tran-thanh-tung",
+    "teacherName": "Trần Thanh Tùng",
+    "modules": [
+      "Hệ thống máy lạnh dân dụng và thương nghiệp 1"
+    ],
+    "roomImage": "/images/layouts/th2-403.png",
+    "stats": {
+      "totalEquipments": 49,
+      "totalTSCD": 26,
+      "totalCCDC": 23,
+      "totalValue": 2646391833
+    },
+    "equipments": [
+      {
+        "id": "DA.23.BDNCT.01",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.01",
+        "quantity": 1,
+        "note": "4",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.02",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.02",
+        "quantity": 1,
+        "note": "5",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.03",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.03",
+        "quantity": 1,
+        "note": "6",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.04",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.04",
+        "quantity": 1,
+        "note": "7",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.05",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.05",
+        "quantity": 1,
+        "note": "8",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.06",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.06",
+        "quantity": 1,
+        "note": "9",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.07",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.07",
+        "quantity": 1,
+        "note": "10",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.08",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.08",
+        "quantity": 1,
+        "note": "11",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.09",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.09",
+        "quantity": 1,
+        "note": "12",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.10",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.10",
+        "quantity": 1,
+        "note": "13",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.11",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.11",
+        "quantity": 1,
+        "note": "14",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.12",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.12",
+        "quantity": 1,
+        "note": "15",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.13",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.13",
+        "quantity": 1,
+        "note": "16",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.14",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.14",
+        "quantity": 1,
+        "note": "17",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.15",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.15",
+        "quantity": 1,
+        "note": "18",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.16",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.16",
+        "quantity": 1,
+        "note": "19",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.17",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.17",
+        "quantity": 1,
+        "note": "20",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.18",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.18",
+        "quantity": 1,
+        "note": "21",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BDNCT.19",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.23.BDNCT.19",
+        "quantity": 1,
+        "note": "22",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.28.BDNCT.01",
+        "type": "TSCĐ",
+        "name": "Bộ đồ nghề điện lạnh cầm tay (TB.A0602)",
+        "code": "DA.28.BDNCT.01",
+        "quantity": 1,
+        "note": "23",
+        "specification": "TB.A0602",
+        "status": "Đang sử dụng",
+        "originalPrice": 14069000
+      },
+      {
+        "id": "DA.23.BTHVRF.03",
+        "type": "TSCĐ",
+        "name": "Bộ thực hành hệ thống VRF (TPAL.C6110)",
+        "code": "DA.23.BTHVRF.03",
+        "quantity": 1,
+        "note": "36",
+        "specification": "TPAL.C6110",
+        "status": "Đang sử dụng",
+        "originalPrice": 1160113500
+      },
+      {
+        "id": "DA.23.MTHCML.02",
+        "type": "TSCĐ",
+        "name": "Máy thu hồi môi chất lạnh (220v- 50/60Hz) (95764)",
+        "code": "DA.23.MTHCML.02",
+        "quantity": 1,
+        "note": "39",
+        "specification": "95764",
+        "status": "Đang sử dụng",
+        "originalPrice": 55561000
+      },
+      {
+        "id": "DA.23.MTHCML.03",
+        "type": "TSCĐ",
+        "name": "Máy thu hồi môi chất lạnh (220v- 50/60Hz) (95764)",
+        "code": "DA.23.MTHCML.03",
+        "quantity": 1,
+        "note": "40",
+        "specification": "95764",
+        "status": "Đang sử dụng",
+        "originalPrice": 55561000
+      },
+      {
+        "id": "DA.23.MTHCML.04",
+        "type": "TSCĐ",
+        "name": "Máy thu hồi môi chất lạnh (220v- 50/60Hz) (95764)",
+        "code": "DA.23.MTHCML.04",
+        "quantity": 1,
+        "note": "41",
+        "specification": "95764",
+        "status": "Đang sử dụng",
+        "originalPrice": 55561000
+      },
+      {
+        "id": "DA.23.MHVRV.03",
+        "type": "TSCĐ",
+        "name": "Mô hình dàn trải hệ thống điều hoà trung tâm VRV (TPAL.C6010)",
+        "code": "DA.23.MHVRV.03",
+        "quantity": 1,
+        "note": "44",
+        "specification": "TPAL.C6010",
+        "status": "Đang sử dụng",
+        "originalPrice": 977056500
+      },
+      {
+        "id": "NS.BTH180112",
+        "type": "TSCĐ",
+        "name": "Tủ đựng thiết bị chuẩn Module A4 cửa kính (VN, TPAD.B6103,TPA)",
+        "code": "NS.BTH180112",
+        "quantity": 1,
+        "note": "164",
+        "specification": "VN, TPAD.B6103,TPA",
+        "status": "Đang sử dụng",
+        "originalPrice": 24500000
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 6,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 13,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      }
+    ]
+  },
+  {
+    "id": "th2-404",
+    "roomId": "TH2.404",
+    "roomName": "Kho",
+    "teacherId": "tran-thanh-tung",
+    "teacherName": "Trần Thanh Tùng",
+    "modules": [],
+    "roomImage": "/images/layouts/th2-404.png",
+    "stats": {
+      "totalEquipments": 20,
+      "totalTSCD": 16,
+      "totalCCDC": 4,
+      "totalValue": 375460731
+    },
+    "equipments": [
+      {
+        "id": "DA.DCNOĐ1804",
+        "type": "TSCĐ",
+        "name": "'Dụng cụ nong ống đồng",
+        "code": "DA.DCNOĐ1804",
+        "quantity": 1,
+        "note": "148",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 15831457
+      },
+      {
+        "id": "DA.DCNOĐ1805",
+        "type": "TSCĐ",
+        "name": "'Dụng cụ nong ống đồng",
+        "code": "DA.DCNOĐ1805",
+        "quantity": 1,
+        "note": "149",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 15831457
+      },
+      {
+        "id": "DA.DCTTOĐ1802",
+        "type": "TSCĐ",
+        "name": "Dụng cụ tạo T ống đồng",
+        "code": "DA.DCTTOĐ1802",
+        "quantity": 1,
+        "note": "152",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34158040
+      },
+      {
+        "id": "DA.DCTTOĐ1803",
+        "type": "TSCĐ",
+        "name": "Dụng cụ tạo T ống đồng",
+        "code": "DA.DCTTOĐ1803",
+        "quantity": 1,
+        "note": "153",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34158040
+      },
+      {
+        "id": "DA.DCTTOĐ1804",
+        "type": "TSCĐ",
+        "name": "Dụng cụ tạo T ống đồng",
+        "code": "DA.DCTTOĐ1804",
+        "quantity": 1,
+        "note": "154",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34158040
+      },
+      {
+        "id": "DA.DCTTOĐ1805",
+        "type": "TSCĐ",
+        "name": "Dụng cụ tạo T ống đồng",
+        "code": "DA.DCTTOĐ1805",
+        "quantity": 1,
+        "note": "155",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34158040
+      },
+      {
+        "id": "DA.MKTDGBAT1801",
+        "type": "TSCĐ",
+        "name": "Máy kiểm tra dò gas bằng âm thanh",
+        "code": "DA.MKTDGBAT1801",
+        "quantity": 1,
+        "note": "168",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 11596722
+      },
+      {
+        "id": "DA.MKTDGBAT1802",
+        "type": "TSCĐ",
+        "name": "Máy kiểm tra dò gas bằng âm thanh",
+        "code": "DA.MKTDGBAT1802",
+        "quantity": 1,
+        "note": "169",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 11596722
+      },
+      {
+        "id": "DA.MKTDGBAT1803",
+        "type": "TSCĐ",
+        "name": "Máy kiểm tra dò gas bằng âm thanh",
+        "code": "DA.MKTDGBAT1803",
+        "quantity": 1,
+        "note": "170",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 11596722
+      },
+      {
+        "id": "DA.MKTDGBAT1804",
+        "type": "TSCĐ",
+        "name": "Máy kiểm tra dò gas bằng âm thanh",
+        "code": "DA.MKTDGBAT1804",
+        "quantity": 1,
+        "note": "171",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 11596722
+      },
+      {
+        "id": "DA.MKTDGBAT1805",
+        "type": "TSCĐ",
+        "name": "Máy kiểm tra dò gas bằng âm thanh",
+        "code": "DA.MKTDGBAT1805",
+        "quantity": 1,
+        "note": "172",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 11596722
+      },
+      {
+        "id": "DA.MKTDGBAT1806",
+        "type": "TSCĐ",
+        "name": "Máy kiểm tra dò gas bằng âm thanh",
+        "code": "DA.MKTDGBAT1806",
+        "quantity": 1,
+        "note": "173",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 11596722
+      },
+      {
+        "id": "DA.MKTDGBAT1807",
+        "type": "TSCĐ",
+        "name": "Máy kiểm tra dò gas bằng âm thanh",
+        "code": "DA.MKTDGBAT1807",
+        "quantity": 1,
+        "note": "174",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 11596722
+      },
+      {
+        "id": "DA.MTHMCL1801",
+        "type": "TSCĐ",
+        "name": "Máy thu hồi môi chất lạnh",
+        "code": "DA.MTHMCL1801",
+        "quantity": 1,
+        "note": "175",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 109256574
+      },
+      {
+        "id": "NS.KBT1811",
+        "type": "TSCĐ",
+        "name": "Kệ 4 tầng ( kt : 2.00*1.00*0.4m)",
+        "code": "NS.KBT1811",
+        "quantity": 1,
+        "note": "187",
+        "specification": "kt : 2.00*1.00*0.4m",
+        "status": "Đang sử dụng",
+        "originalPrice": 6825000
+      },
+      {
+        "id": "NS.KBT1812",
+        "type": "TSCĐ",
+        "name": "Kệ 4 tầng ( kt : 2.00*1.00*0.4m)",
+        "code": "NS.KBT1812",
+        "quantity": 1,
+        "note": "188",
+        "specification": "kt : 2.00*1.00*0.4m",
+        "status": "Đang sử dụng",
+        "originalPrice": 6825000
+      },
+      {
+        "id": "SN.KE02",
+        "type": "CCDC",
+        "name": "Kệ thép 4 ngăn (1,52*0,5*1,58)m (thư viện)",
+        "code": "SN.KE02",
+        "quantity": 3,
+        "note": "36",
+        "specification": "thư viện",
+        "status": "Đang sử dụng",
+        "originalPrice": 700000
+      },
+      {
+        "id": "LK.BMH01",
+        "type": "CCDC",
+        "name": "Bộ mỏ hàn 3 đầu béc",
+        "code": "LK.BMH01",
+        "quantity": 1,
+        "note": "19",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 982029
+      }
+    ]
+  },
+  {
+    "id": "th2-405",
+    "roomId": "TH2.405",
+    "roomName": "Phòng thực hành điện - điện tử",
+    "teacherId": "nguyen-xuan-phuong",
+    "teacherName": "Nguyền Xuân Phương",
+    "modules": [
+      "Trang bị điện",
+      "PLC"
+    ],
+    "roomImage": "/images/layouts/th2-405.png",
+    "stats": {
+      "totalEquipments": 93,
+      "totalTSCD": 27,
+      "totalCCDC": 66,
+      "totalValue": 408352333
+    },
+    "equipments": [
+      {
+        "id": "NS.MTĐB-10",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-10",
+        "quantity": 1,
+        "note": "50",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-11",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-11",
+        "quantity": 1,
+        "note": "51",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-12",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-12",
+        "quantity": 1,
+        "note": "52",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-13",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-13",
+        "quantity": 1,
+        "note": "53",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-14",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-14",
+        "quantity": 1,
+        "note": "54",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-15",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-15",
+        "quantity": 1,
+        "note": "55",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-16",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-16",
+        "quantity": 1,
+        "note": "56",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-17",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-17",
+        "quantity": 1,
+        "note": "57",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-18",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-18",
+        "quantity": 1,
+        "note": "58",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-19",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-19",
+        "quantity": 1,
+        "note": "59",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-2",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-2",
+        "quantity": 1,
+        "note": "60",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-20",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-20",
+        "quantity": 1,
+        "note": "61",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-3",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-3",
+        "quantity": 1,
+        "note": "62",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-4",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-4",
+        "quantity": 1,
+        "note": "63",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-5",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-5",
+        "quantity": 1,
+        "note": "64",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-6",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-6",
+        "quantity": 1,
+        "note": "65",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-7",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-7",
+        "quantity": 1,
+        "note": "66",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-8",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-8",
+        "quantity": 1,
+        "note": "67",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "NS.MTĐB-9",
+        "type": "TSCĐ",
+        "name": "Máy tính để bàn , VN TPAD.B4803 TPA",
+        "code": "NS.MTĐB-9",
+        "quantity": 1,
+        "note": "68",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 10100000
+      },
+      {
+        "id": "HP2.MVT1701",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1701",
+        "quantity": 1,
+        "note": "70",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "HP2.MVT1702",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1702",
+        "quantity": 1,
+        "note": "71",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "HP2.MVT1703",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1703",
+        "quantity": 1,
+        "note": "72",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "HP2.MVT1704",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1704",
+        "quantity": 1,
+        "note": "73",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "HP2.MVT1705",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1705",
+        "quantity": 1,
+        "note": "74",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "HP2.MVT1706",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1706",
+        "quantity": 1,
+        "note": "75",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "HP2.MVT1707",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1707",
+        "quantity": 1,
+        "note": "76",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "HP2.MVT1708",
+        "type": "TSCĐ",
+        "name": "Máy vi tính FPT ELEAD T9460 core i5-4460 màn hình 19.5\"LED",
+        "code": "HP2.MVT1708",
+        "quantity": 1,
+        "note": "77",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 13750000
+      },
+      {
+        "id": "TUTOL",
+        "type": "CCDC",
+        "name": "Tủ tol 3 ngăn nhỏ",
+        "code": "TUTOL",
+        "quantity": 2,
+        "note": "",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 26,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 1,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 34,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 1,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      }
+    ]
+  },
+  {
+    "id": "hoi-truong-moi",
+    "roomId": "Hội trường mới",
+    "roomName": "Hệ thống máy lạnh dân dụng và thương nghiệp 2",
+    "teacherId": "tran-minh-khoa",
+    "teacherName": "Trần Minh Khoa",
+    "modules": [
+      "Hệ thống máy lạnh dân dụng và thương nghiệp"
+    ],
+    "roomImage": "/images/layouts/hoi-truong-moi.png",
+    "stats": {
+      "totalEquipments": 113,
+      "totalTSCD": 18,
+      "totalCCDC": 95,
+      "totalValue": 829192137
+    },
+    "equipments": [
+      {
+        "id": "DA.TV1801",
+        "type": "TSCĐ",
+        "name": "Tivi plasma Samsung 51 inches (Model: PA51H4500)",
+        "code": "DA.TV1801",
+        "quantity": 1,
+        "note": "80",
+        "specification": "Model: PA51H4500",
+        "status": "Đang sử dụng",
+        "originalPrice": 20060000
+      },
+      {
+        "id": "DA.BHH1902",
+        "type": "TSCĐ",
+        "name": "Bộ hàn hơi",
+        "code": "DA.BHH1902",
+        "quantity": 1,
+        "note": "82",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34800000
+      },
+      {
+        "id": "DA.BHH1903",
+        "type": "TSCĐ",
+        "name": "Bộ hàn hơi",
+        "code": "DA.BHH1903",
+        "quantity": 1,
+        "note": "83",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34800000
+      },
+      {
+        "id": "DA.BHH1904",
+        "type": "TSCĐ",
+        "name": "Bộ hàn hơi",
+        "code": "DA.BHH1904",
+        "quantity": 1,
+        "note": "84",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34800000
+      },
+      {
+        "id": "DA.BHH1905",
+        "type": "TSCĐ",
+        "name": "Bộ hàn hơi",
+        "code": "DA.BHH1905",
+        "quantity": 1,
+        "note": "85",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34800000
+      },
+      {
+        "id": "DA.BHH1906",
+        "type": "TSCĐ",
+        "name": "Bộ hàn hơi",
+        "code": "DA.BHH1906",
+        "quantity": 1,
+        "note": "86",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34800000
+      },
+      {
+        "id": "DA.CMNDN1803",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1803",
+        "quantity": 1,
+        "note": "132",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1804",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1804",
+        "quantity": 1,
+        "note": "133",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1805",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1805",
+        "quantity": 1,
+        "note": "134",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1806",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1806",
+        "quantity": 1,
+        "note": "135",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1807",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1807",
+        "quantity": 1,
+        "note": "136",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1812",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1812",
+        "quantity": 1,
+        "note": "141",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1813",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1813",
+        "quantity": 1,
+        "note": "142",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1814",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1814",
+        "quantity": 1,
+        "note": "143",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "DA.CMNDN1815",
+        "type": "TSCĐ",
+        "name": "Cụm máy nén dàn ngưng",
+        "code": "DA.CMNDN1815",
+        "quantity": 1,
+        "note": "144",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 43712744
+      },
+      {
+        "id": "KHB.MK03",
+        "type": "CCDC",
+        "name": "Máy khoan búa GBM 2-18RE",
+        "code": "KHB.MK03",
+        "quantity": 1,
+        "note": "18",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 3324836
+      },
+      {
+        "id": "NS.TL01",
+        "type": "CCDC",
+        "name": "Tủ lạnh Sanyo 13 JN",
+        "code": "NS.TL01",
+        "quantity": 2,
+        "note": "32",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 3833333
+      },
+      {
+        "id": "PTHĐSN.TL01",
+        "type": "CCDC",
+        "name": "Tủ lạnh Sanyo 110 lít không đóng tuyết",
+        "code": "PTHĐSN.TL01",
+        "quantity": 2,
+        "note": "33",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 4500000
+      },
+      {
+        "id": "PTHĐSN.TL02",
+        "type": "CCDC",
+        "name": "Tủ lạnh Sanyo 110 lít đóng tuyết",
+        "code": "PTHĐSN.TL02",
+        "quantity": 3,
+        "note": "34",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 3645000
+      },
+      {
+        "id": "TUTOL",
+        "type": "CCDC",
+        "name": "Tủ tol 3 ngăn nhỏ",
+        "code": "TUTOL",
+        "quantity": 1,
+        "note": "44",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "Hp.Quat19-05",
+        "type": "CCDC",
+        "name": "Quạt Bảo Hộ Đứng",
+        "code": "Hp.Quat19-05",
+        "quantity": 1,
+        "note": "14",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1600000
+      },
+      {
+        "id": "QCN",
+        "type": "CCDC",
+        "name": "Quạt công nghiệp",
+        "code": "QCN",
+        "quantity": 1,
+        "note": "35",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": null
+      },
+      {
+        "id": "DA.DCNOĐ1801",
+        "type": "TSCĐ",
+        "name": "'Dụng cụ nong ống đồng",
+        "code": "DA.DCNOĐ1801",
+        "quantity": 2,
+        "note": "145",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 15831457
+      },
+      {
+        "id": "DA.DCTTOĐ1801",
+        "type": "TSCĐ",
+        "name": "Dụng cụ tạo T ống đồng",
+        "code": "DA.DCTTOĐ1801",
+        "quantity": 1,
+        "note": "151",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 34158040
+      },
+      {
+        "id": "DA.BĐG 18-08A",
+        "type": "CCDC",
+        "name": "Bục đứng giảng, gỗ căm xe, kt : 0.25*3.2m",
+        "code": "DA.BĐG 18-08A",
+        "quantity": 1,
+        "note": "2",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 1575000
+      },
+      {
+        "id": "DA.BHS18-141A",
+        "type": "CCDC",
+        "name": "Bàn học sinh Kích thước: 1,20 x 0,45 x (0,72 - 0,75)m, gỗ thao lao",
+        "code": "DA.BHS18-141A",
+        "quantity": 35,
+        "note": "3",
+        "specification": "0,72 - 0,75",
+        "status": "Đang sử dụng",
+        "originalPrice": 2310000
+      },
+      {
+        "id": "DA.BVKCL18-08",
+        "type": "CCDC",
+        "name": "Bảng viết phấn khung nhôm chống loá, kt : 1.2*3.2m, Khung nhôm hộp Duranium",
+        "code": "DA.BVKCL18-08",
+        "quantity": 1,
+        "note": "4",
+        "specification": null,
+        "status": "Đang sử dụng",
+        "originalPrice": 2100000
+      },
+      {
+        "id": "DA.GGV18-24A",
+        "type": "CCDC",
+        "name": "Ghế giáo viên ( mẫu ghế đầu bò ), Kích thước: 0,39 x 0.39 x 0.45m, cao tính đến đỉnh tựa ghế 0.92m",
+        "code": "DA.GGV18-24A",
+        "quantity": 45,
+        "note": "5",
+        "specification": "mẫu ghế đầu bò",
+        "status": "Đang sử dụng",
+        "originalPrice": 1158333
+      },
+      {
+        "id": "DA.GHS18-08A",
+        "type": "CCDC",
+        "name": "Ghế học sinh, Kích thước: 0.36 x 0.38 x 0.42 ( cao tới lưng tựa ): 0.82m , gổ thao lao",
+        "code": "DA.GHS18-08A",
+        "quantity": 0,
+        "note": "6",
+        "specification": "cao tới lưng tựa",
+        "status": "Đang sử dụng",
+        "originalPrice": 1123500
+      },
+      {
+        "id": "DA.GHS18-08B",
+        "type": "CCDC",
+        "name": "Bàn giáo viên ( không tủ ), Kích thước: 1,20 x 0,60 x 0,76m, Khung gỗ căm xe, sơn PU",
+        "code": "DA.GHS18-08B",
+        "quantity": 2,
+        "note": "7",
+        "specification": "không tủ",
+        "status": "Đang sử dụng",
+        "originalPrice": 3360000
+      }
+    ]
+  }
+]
