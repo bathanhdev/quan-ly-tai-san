@@ -666,7 +666,6 @@ export default function AdminPage() {
                     <th className="p-2">SL</th>
                     <th className="p-2">Quy cách</th>
                     <th className="p-2">Ghi chú</th>
-                    <th className="p-2">Nguyên giá</th>
                     <th className="p-2">Tình trạng</th>
                     <th className="p-2">Thao tác</th>
                   </tr>
@@ -685,7 +684,6 @@ export default function AdminPage() {
                       <td className="p-2"><input type="number" value={item.quantity} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, quantity: Number(e.target.value) } : eq))} className="h-9 w-20 rounded-lg border border-slate-200 px-2" /></td>
                       <td className="p-2"><input value={item.specification || ''} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, specification: e.target.value || null } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2" /></td>
                       <td className="p-2"><input value={item.note || ''} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, note: e.target.value || null } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2" /></td>
-                      <td className="p-2"><input type="number" value={item.original_price ?? ''} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, original_price: e.target.value ? Number(e.target.value) : null } : eq))} className="h-9 w-32 rounded-lg border border-slate-200 px-2" /></td>
                       <td className="p-2"><input value={item.status} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, status: e.target.value } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2" /></td>
                       <td className="p-2">
                         <div className="flex gap-2">
@@ -812,10 +810,6 @@ export default function AdminPage() {
               <label>
                 <span className="text-xs font-semibold uppercase text-slate-400">Số lượng</span>
                 <input required min={1} type="number" value={equipmentDraft.quantity} onChange={(e) => setEquipmentDraft({ ...equipmentDraft, quantity: Number(e.target.value) })} className="mt-2 h-11 w-full rounded-xl border border-slate-200 px-3 text-sm" />
-              </label>
-              <label>
-                <span className="text-xs font-semibold uppercase text-slate-400">Nguyên giá</span>
-                <input type="number" value={equipmentDraft.original_price ?? ''} onChange={(e) => setEquipmentDraft({ ...equipmentDraft, original_price: e.target.value ? Number(e.target.value) : null })} className="mt-2 h-11 w-full rounded-xl border border-slate-200 px-3 text-sm" />
               </label>
               <label>
                 <span className="text-xs font-semibold uppercase text-slate-400">Quy cách</span>

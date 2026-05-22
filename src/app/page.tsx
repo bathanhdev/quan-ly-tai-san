@@ -14,11 +14,6 @@ const normalizeText = (value: string | number | null | undefined) =>
     .toLowerCase()
     .trim();
 
-const valueFormatter = new Intl.NumberFormat('vi-VN', {
-  maximumFractionDigits: 1,
-  minimumFractionDigits: 1,
-});
-
 const numberFormatter = new Intl.NumberFormat('vi-VN');
 
 export default function HomePage() {
@@ -38,7 +33,6 @@ export default function HomePage() {
     return {
       totalRooms: classrooms.length,
       totalItems: classrooms.reduce((acc, room) => acc + (room.stats?.totalEquipments || 0), 0),
-      totalValue: classrooms.reduce((acc, room) => acc + (room.stats?.totalValue || 0), 0),
       totalTSCD,
       totalCCDC,
     };
@@ -71,7 +65,6 @@ export default function HomePage() {
     { label: 'Thiết bị', value: numberFormatter.format(globalStats.totalItems), detail: 'đang kiểm kê', tone: 'border-cyan-500' },
     { label: 'TSCĐ', value: numberFormatter.format(globalStats.totalTSCD), detail: 'tài sản cố định', tone: 'border-emerald-500' },
     { label: 'CCDC', value: numberFormatter.format(globalStats.totalCCDC), detail: 'công cụ dụng cụ', tone: 'border-amber-500' },
-    { label: 'Giá trị', value: `${valueFormatter.format(globalStats.totalValue / 1_000_000_000)} tỷ`, detail: 'VNĐ ghi nhận', tone: 'border-rose-500' },
   ];
 
   return (
@@ -159,7 +152,7 @@ export default function HomePage() {
       </header>
 
       <main className="mx-auto max-w-7xl px-5 py-8 lg:px-8">
-        <section className="grid grid-cols-2 gap-3 md:grid-cols-5">
+        <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {statCards.map((stat) => (
             <div key={stat.label} className={`rounded-xl border-l-4 ${stat.tone} bg-white p-4 shadow-sm`}>
               <p className="text-xs font-semibold uppercase text-slate-400">{stat.label}</p>

@@ -21,10 +21,6 @@ const normalizeText = (value: string | number | null | undefined) =>
 const compactId = (value: string | number | null | undefined) =>
   normalizeText(value).replace(/[\s._-]/g, '');
 
-const currencyFormatter = new Intl.NumberFormat('vi-VN', {
-  maximumFractionDigits: 0,
-});
-
 const getInitials = (name: string) =>
   name
     .split(' ')
@@ -125,7 +121,6 @@ export default function RoomDetailPage() {
   const teacherAvatar = associatedTeacher?.avatar;
   const totalItems = currentClassroom.stats.totalEquipments || 1;
   const tscdRatio = Math.round(((currentClassroom.stats.totalTSCD || 0) / totalItems) * 100);
-  const missingPriceCount = currentClassroom.equipments.filter((item) => item.originalPrice === null).length;
 
   return (
     <div className="min-h-screen bg-[#f4f7f8] text-slate-900">
@@ -206,7 +201,7 @@ export default function RoomDetailPage() {
               <div className="mt-5 rounded-2xl border border-white/15 bg-[#042f2c]/45 p-4">
                 <div className="grid gap-4 md:grid-cols-[1fr_220px] md:items-end">
                   <div>
-                    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                    <div className="grid grid-cols-3 gap-3">
                       <div>
                         <p className="text-[10px] font-semibold uppercase text-teal-100/55">Tổng thiết bị</p>
                         <p className="mt-2 text-3xl font-bold">{currentClassroom.stats.totalEquipments}</p>
@@ -218,10 +213,6 @@ export default function RoomDetailPage() {
                       <div>
                         <p className="text-[10px] font-semibold uppercase text-teal-100/55">CCDC</p>
                         <p className="mt-2 text-3xl font-bold">{currentClassroom.stats.totalCCDC}</p>
-                      </div>
-                      <div>
-                        <p className="text-[10px] font-semibold uppercase text-teal-100/55">Thiếu giá</p>
-                        <p className="mt-2 text-3xl font-bold">{missingPriceCount}</p>
                       </div>
                     </div>
                     <div className="mt-4 flex items-center justify-between text-xs font-semibold text-teal-50/75">
@@ -294,14 +285,13 @@ export default function RoomDetailPage() {
           </div>
 
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[900px] text-left text-sm">
+            <table className="w-full min-w-[760px] text-left text-sm">
               <thead>
                 <tr className="border-b border-slate-200 text-xs font-bold uppercase text-slate-400">
                   <th className="w-24 px-4 py-3">Loại</th>
                   <th className="px-4 py-3">Tên thiết bị</th>
                   <th className="w-48 px-4 py-3">Mã tài sản</th>
                   <th className="w-24 px-4 py-3 text-right">Số lượng</th>
-                  <th className="w-40 px-4 py-3 text-right">Nguyên giá</th>
                   <th className="w-40 px-4 py-3">Tình trạng</th>
                 </tr>
               </thead>
@@ -326,9 +316,6 @@ export default function RoomDetailPage() {
                     </td>
                     <td className="px-4 py-4 font-mono text-xs font-semibold text-slate-500">{item.code}</td>
                     <td className="px-4 py-4 text-right font-bold">{item.quantity}</td>
-                    <td className="px-4 py-4 text-right font-semibold text-slate-700">
-                      {item.originalPrice === null ? 'Chưa có' : `${currencyFormatter.format(item.originalPrice)}đ`}
-                    </td>
                     <td className="px-4 py-4">
                       <span className="rounded-md bg-slate-100 px-2 py-1 text-xs font-semibold text-slate-600">
                         {item.status}
@@ -339,7 +326,7 @@ export default function RoomDetailPage() {
 
                 {filteredEquipments.length === 0 && (
                   <tr>
-                    <td colSpan={6} className="px-4 py-16 text-center">
+                    <td colSpan={5} className="px-4 py-16 text-center">
                       <p className="text-base font-bold text-slate-800">Không có thiết bị phù hợp</p>
                       <p className="mt-2 text-sm text-slate-500">Thử đổi bộ lọc hoặc từ khóa tìm kiếm.</p>
                     </td>
