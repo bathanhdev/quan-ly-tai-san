@@ -1,15 +1,13 @@
 'use client';
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import classroomsData from '@/data/classrooms.json';
-import teachersData from '@/data/teachers.json';
 import type { Classroom, Teacher } from '@/types';
+import { fetchClassroomsFromSupabase, fetchTeachersFromSupabase } from '@/lib/supabase/publicData';
+import RoomLayoutImage from './RoomLayoutImage';
 import RoomQrCode from './RoomQrCode';
-
-const classrooms = classroomsData as Classroom[];
-const teachers = teachersData as Teacher[];
 
 const normalizeText = (value: string | number | null | undefined) =>
   String(value ?? '')
@@ -27,11 +25,6 @@ const currencyFormatter = new Intl.NumberFormat('vi-VN', {
   maximumFractionDigits: 0,
 });
 
-const shortValueFormatter = new Intl.NumberFormat('vi-VN', {
-  maximumFractionDigits: 1,
-  minimumFractionDigits: 1,
-});
-
 const getInitials = (name: string) =>
   name
     .split(' ')
@@ -45,6 +38,17 @@ export default function RoomDetailPage() {
   const params = useParams<{ id?: string }>();
   const [filterType, setFilterType] = useState<'ALL' | 'TSCĐ' | 'CCDC'>('ALL');
   const [searchQuery, setSearchQuery] = useState('');
+  const [classrooms, setClassrooms] = useState<Classroom[]>([]);
+  const [teachers, setTeachers] = useState<Teacher[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    Promise.all([fetchClassroomsFromSupabase(), fetchTeachersFromSupabase()]).then(([rooms, teacherRows]) => {
+      setClassrooms(rooms);
+      setTeachers(teacherRows);
+      setIsLoading(false);
+    });
+  }, []);
 
   const currentClassroom = useMemo(() => {
     const rawId = params?.id ?? '';
@@ -55,11 +59,11 @@ export default function RoomDetailPage() {
       const slug = compactId(room.id);
       return roomId === targetId || slug === targetId || roomId.includes(targetId);
     });
-  }, [params?.id]);
+  }, [classrooms, params?.id]);
 
   const associatedTeacher = useMemo(
     () => teachers.find((teacher) => teacher.id === currentClassroom?.teacherId),
-    [currentClassroom?.teacherId]
+    [currentClassroom?.teacherId, teachers]
   );
 
   const filteredEquipments = useMemo(() => {
@@ -80,6 +84,17 @@ export default function RoomDetailPage() {
       return matchesType && (!query || searchableText.includes(query));
     });
   }, [currentClassroom, filterType, searchQuery]);
+
+  if (isLoading) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#f4f7f8] px-5 text-center">
+        <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+          <div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-teal-700 border-t-transparent" />
+          <p className="mt-4 text-sm font-semibold text-slate-500">Đang tải dữ liệu phòng từ Supabase...</p>
+        </div>
+      </div>
+    );
+  }
 
   if (!currentClassroom) {
     return (
@@ -107,25 +122,18 @@ export default function RoomDetailPage() {
   const teacherDepartment = associatedTeacher?.department || 'Khoa Công nghệ Nhiệt lạnh';
   const teacherEmail = associatedTeacher?.email || 'Chưa cập nhật';
   const teacherPhone = associatedTeacher?.phone || 'Chưa cập nhật';
-  const totalValue = currentClassroom.stats.totalValue ?? 0;
+  const teacherAvatar = associatedTeacher?.avatar;
   const totalItems = currentClassroom.stats.totalEquipments || 1;
   const tscdRatio = Math.round(((currentClassroom.stats.totalTSCD || 0) / totalItems) * 100);
   const missingPriceCount = currentClassroom.equipments.filter((item) => item.originalPrice === null).length;
-
-  const stats = [
-    { label: 'Tổng thiết bị', value: currentClassroom.stats.totalEquipments, detail: 'số lượng kiểm kê', tone: 'border-teal-500' },
-    { label: 'TSCĐ', value: currentClassroom.stats.totalTSCD, detail: 'tài sản cố định', tone: 'border-emerald-500' },
-    { label: 'CCDC', value: currentClassroom.stats.totalCCDC, detail: 'công cụ dụng cụ', tone: 'border-cyan-500' },
-    { label: 'Giá trị', value: `${shortValueFormatter.format(totalValue / 1_000_000_000)} tỷ`, detail: 'VNĐ ghi nhận', tone: 'border-amber-500' },
-  ];
 
   return (
     <div className="min-h-screen bg-[#f4f7f8] text-slate-900">
       <header className="relative overflow-hidden bg-[#063f3a] text-white">
         <div className="absolute inset-0 opacity-30 bg-[linear-gradient(135deg,rgba(45,212,191,0.34),transparent_36%),linear-gradient(315deg,rgba(251,191,36,0.2),transparent_34%)]" />
 
-        <div className="relative mx-auto max-w-7xl px-5 py-8 lg:px-8">
-          <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="relative mx-auto max-w-7xl px-5 py-6 lg:px-8">
+          <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <Link
               href="/"
               className="inline-flex w-fit items-center gap-2 rounded-xl border border-white/15 bg-white/10 px-3 py-2 text-sm font-semibold text-teal-50 backdrop-blur transition hover:bg-white/15"
@@ -138,14 +146,17 @@ export default function RoomDetailPage() {
             </div>
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-            <div>
+          <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_430px]">
+            <div className="rounded-[28px] border border-white/15 bg-white/[0.07] p-5 backdrop-blur md:p-6">
               <div className="mb-5 flex flex-wrap items-center gap-2">
                 <span className="rounded-md bg-amber-300 px-3 py-1.5 text-sm font-bold text-slate-950">
                   {currentClassroom.roomId}
                 </span>
                 {currentClassroom.modules.map((module) => (
-                  <span key={module} className="rounded-md border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-teal-50">
+                  <span
+                    key={module}
+                    className="rounded-md border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-teal-50"
+                  >
                     {module}
                   </span>
                 ))}
@@ -155,81 +166,91 @@ export default function RoomDetailPage() {
                 {currentClassroom.roomName}
               </h1>
 
-              <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur">
-                  <p className="text-xs font-semibold uppercase text-teal-100/70">Giảng viên quản lý</p>
-                  <div className="mt-3 flex items-start gap-3">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-base font-bold text-[#063f3a]">
+              <div className="mt-7 flex flex-col gap-4 rounded-2xl border border-white/15 bg-white/10 p-4 md:flex-row md:items-center md:justify-between">
+                <div className="flex min-w-0 items-center gap-3">
+                  {teacherAvatar ? (
+                    <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-2xl bg-white">
+                      <Image
+                        src={teacherAvatar}
+                        alt={`Avatar ${teacherName}`}
+                        fill
+                        sizes="56px"
+                        className="object-cover"
+                        unoptimized
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white text-base font-bold text-[#063f3a]">
                       {getInitials(teacherName)}
                     </div>
-                    <div className="min-w-0">
-                      <p className="truncate text-sm font-bold">{teacherName}</p>
-                      <p className="truncate text-xs text-teal-50/65">{teacherDepartment}</p>
-                    </div>
-                  </div>
-                  <div className="mt-4 grid gap-2 text-xs text-teal-50/75">
-                    <div className="flex items-center justify-between gap-3 border-t border-white/10 pt-3">
-                      <span className="font-semibold uppercase text-teal-100/60">Email</span>
-                      <span className="truncate text-right font-medium">{teacherEmail}</span>
-                    </div>
-                    <div className="flex items-center justify-between gap-3">
-                      <span className="font-semibold uppercase text-teal-100/60">Điện thoại</span>
-                      <span className="truncate text-right font-medium">{teacherPhone}</span>
-                    </div>
+                  )}
+                  <div className="min-w-0">
+                    <p className="text-xs font-semibold uppercase text-teal-100/60">Giảng viên quản lý</p>
+                    <p className="mt-1 truncate text-base font-bold">{teacherName}</p>
+                    <p className="truncate text-xs text-teal-50/65">{teacherDepartment}</p>
                   </div>
                 </div>
 
-                <div className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur">
-                  <p className="text-xs font-semibold uppercase text-teal-100/70">Cơ cấu tài sản</p>
-                  <div className="mt-4 flex items-center justify-between text-sm font-semibold">
-                    <span>{tscdRatio}% TSCĐ</span>
-                    <span>{100 - tscdRatio}% CCDC</span>
+                <div className="grid min-w-0 gap-2 text-xs text-teal-50/75 sm:grid-cols-2 md:w-72 md:grid-cols-1">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="font-semibold uppercase text-teal-100/60">Email</span>
+                    <span className="truncate text-right font-medium">{teacherEmail}</span>
                   </div>
-                  <div className="mt-3 h-2 overflow-hidden rounded-full bg-white/15">
-                    <div className="h-full rounded-full bg-amber-300" style={{ width: `${tscdRatio}%` }} />
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="font-semibold uppercase text-teal-100/60">Điện thoại</span>
+                    <span className="truncate text-right font-medium">{teacherPhone}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-5 rounded-2xl border border-white/15 bg-[#042f2c]/45 p-4">
+                <div className="grid gap-4 md:grid-cols-[1fr_220px] md:items-end">
+                  <div>
+                    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase text-teal-100/55">Tổng thiết bị</p>
+                        <p className="mt-2 text-3xl font-bold">{currentClassroom.stats.totalEquipments}</p>
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase text-teal-100/55">TSCĐ</p>
+                        <p className="mt-2 text-3xl font-bold">{currentClassroom.stats.totalTSCD}</p>
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase text-teal-100/55">CCDC</p>
+                        <p className="mt-2 text-3xl font-bold">{currentClassroom.stats.totalCCDC}</p>
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase text-teal-100/55">Thiếu giá</p>
+                        <p className="mt-2 text-3xl font-bold">{missingPriceCount}</p>
+                      </div>
+                    </div>
+                    <div className="mt-4 flex items-center justify-between text-xs font-semibold text-teal-50/75">
+                      <span>{tscdRatio}% tài sản cố định</span>
+                      <span>{100 - tscdRatio}% công cụ dụng cụ</span>
+                    </div>
+                    <div className="mt-2 flex h-2 overflow-hidden rounded-full bg-cyan-300">
+                      <div className="h-full bg-amber-300" style={{ width: `${tscdRatio}%` }} />
+                    </div>
+                  </div>
+                  <div className="rounded-xl bg-white/10 p-3 text-right">
+                    <p className="text-[10px] font-semibold uppercase text-teal-100/55">Dòng dữ liệu</p>
+                    <p className="mt-2 text-4xl font-bold">{currentClassroom.equipments.length}</p>
+                    <p className="mt-1 text-xs font-medium text-teal-50/65">bản ghi kiểm kê</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
-              <div>
-                <p className="text-xs font-semibold uppercase text-teal-100/70">Tổng giá trị ghi nhận</p>
-                <p className="mt-3 text-4xl font-bold">{currencyFormatter.format(totalValue)}đ</p>
-                <p className="mt-3 text-sm leading-6 text-teal-50/70">
-                  Tổng hợp từ nguyên giá theo mã tài sản trong file kiểm kê. Các dòng thiếu nguyên giá không được cộng vào chỉ số này.
-                </p>
-              </div>
-              <div className="mt-5 grid grid-cols-2 gap-3">
-                <div className="rounded-xl bg-white p-4 text-slate-900">
-                  <p className="text-xs font-semibold uppercase text-slate-400">Dòng dữ liệu</p>
-                  <p className="mt-2 text-2xl font-bold">{currentClassroom.equipments.length}</p>
-                </div>
-                <div className="rounded-xl bg-white p-4 text-slate-900">
-                  <p className="text-xs font-semibold uppercase text-slate-400">Thiếu giá</p>
-                  <p className="mt-2 text-2xl font-bold">{missingPriceCount}</p>
-                </div>
-              </div>
-              <div className="mt-3">
-                <RoomQrCode roomId={currentClassroom.roomId} />
-              </div>
+            <div className="grid content-start gap-4">
+              <RoomLayoutImage roomId={currentClassroom.roomId} roomImage={currentClassroom.roomImage} compact />
+              <RoomQrCode roomId={currentClassroom.roomId} />
             </div>
           </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-7xl px-5 py-8 lg:px-8">
-        <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-          {stats.map((stat) => (
-            <div key={stat.label} className={`rounded-xl border-l-4 ${stat.tone} bg-white p-4 shadow-sm`}>
-              <p className="text-xs font-semibold uppercase text-slate-400">{stat.label}</p>
-              <p className="mt-2 text-2xl font-bold text-slate-900">{stat.value}</p>
-              <p className="mt-1 text-xs font-medium text-slate-500">{stat.detail}</p>
-            </div>
-          ))}
-        </section>
-
-        <section className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
           <div className="border-b border-slate-200 bg-slate-50 p-4">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
               <div>

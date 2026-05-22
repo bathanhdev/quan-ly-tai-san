@@ -1,11 +1,9 @@
 'use client';
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import classroomsData from '@/data/classrooms.json';
 import type { Classroom } from '@/types';
-
-const classrooms = classroomsData as Classroom[];
+import { fetchClassroomsFromSupabase } from '@/lib/supabase/publicData';
 
 const normalizeText = (value: string | number | null | undefined) =>
   String(value ?? '')
@@ -25,6 +23,13 @@ const numberFormatter = new Intl.NumberFormat('vi-VN');
 
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState('');
+  const [classrooms, setClassrooms] = useState<Classroom[]>([]);
+
+  useEffect(() => {
+    fetchClassroomsFromSupabase().then((data) => {
+      setClassrooms(data);
+    });
+  }, []);
 
   const globalStats = useMemo(() => {
     const totalTSCD = classrooms.reduce((acc, room) => acc + (room.stats?.totalTSCD || 0), 0);
@@ -37,7 +42,7 @@ export default function HomePage() {
       totalTSCD,
       totalCCDC,
     };
-  }, []);
+  }, [classrooms]);
 
   const filteredRooms = useMemo(() => {
     const targetSearch = normalizeText(searchQuery);
@@ -54,11 +59,11 @@ export default function HomePage() {
 
       return searchableText.includes(targetSearch);
     });
-  }, [searchQuery]);
+  }, [classrooms, searchQuery]);
 
   const spotlightRooms = useMemo(
     () => [...classrooms].sort((a, b) => b.stats.totalEquipments - a.stats.totalEquipments).slice(0, 3),
-    []
+    [classrooms]
   );
 
   const statCards = [
@@ -78,9 +83,17 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-7xl gap-8 px-5 py-8 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-10">
           <div className="flex min-h-[280px] flex-col justify-between">
             <div>
-              <div className="mb-5 inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-teal-50 backdrop-blur">
-                <span className="h-2 w-2 rounded-full bg-amber-300" />
-                Khoa Công nghệ Nhiệt lạnh
+              <div className="mb-5 flex flex-wrap items-center gap-2">
+                <div className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-teal-50 backdrop-blur">
+                  <span className="h-2 w-2 rounded-full bg-amber-300" />
+                  Khoa Công nghệ Nhiệt lạnh
+                </div>
+                <Link
+                  href="/admin"
+                  className="inline-flex rounded-md border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold text-teal-50 backdrop-blur transition hover:bg-white/15"
+                >
+                  Quản trị
+                </Link>
               </div>
               <h1 className="max-w-3xl text-4xl font-bold leading-tight md:text-6xl">
                 Hệ thống quản trị tài sản
