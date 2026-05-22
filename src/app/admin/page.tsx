@@ -129,11 +129,16 @@ export default function AdminPage() {
     if (teachersResult.error || roomsResult.error || equipmentsResult.error) {
       setMessage('Chưa đọc được dữ liệu Supabase. Hãy chạy supabase/schema.sql trong SQL Editor trước.');
     } else {
+      const roomRows = (roomsResult.data || []) as RoomRow[];
       setTeachers((teachersResult.data || []) as TeacherRow[]);
-      setRooms((roomsResult.data || []) as RoomRow[]);
+      setRooms(roomRows);
       setEquipments((equipmentsResult.data || []) as EquipmentRow[]);
-      setSelectedRoomId((roomsResult.data?.[0] as RoomRow | undefined)?.id || '');
-      setMessage('Đã tải dữ liệu từ Supabase.');
+      setSelectedRoomId((currentRoomId) => {
+        if (currentRoomId && roomRows.some((room) => room.id === currentRoomId)) {
+          return currentRoomId;
+        }
+        return roomRows[0]?.id || '';
+      });
     }
 
     setIsLoading(false);
@@ -255,9 +260,25 @@ export default function AdminPage() {
       setMessage('Thiết bị cần có mã trước khi lưu.');
       return false;
     }
-    const { error } = await supabase.from('equipments').upsert(normalizedEquipment, { onConflict: 'id' });
+    const { data, error } = await supabase
+      .from('equipments')
+      .upsert(normalizedEquipment, { onConflict: 'id' })
+      .select()
+      .single();
     setMessage(error ? error.message : `Đã lưu thiết bị ${equipment.code || equipment.name}.`);
-    if (!error) await loadData();
+    if (!error && data) {
+      const savedEquipment = data as EquipmentRow;
+      setEquipments((rows) => {
+        const exists = rows.some((item) => item.id === savedEquipment.id);
+        if (exists) {
+          return rows.map((item) => (item.id === savedEquipment.id ? savedEquipment : item));
+        }
+        return [...rows, savedEquipment].sort((a, b) => a.name.localeCompare(b.name));
+      });
+      if (savedEquipment.room_id) {
+        setSelectedRoomId(savedEquipment.room_id);
+      }
+    }
     return !error;
   };
 
@@ -265,7 +286,9 @@ export default function AdminPage() {
     if (!supabase) return;
     const { error } = await supabase.from('equipments').delete().eq('id', equipmentId);
     setMessage(error ? error.message : 'Đã xóa thiết bị.');
-    if (!error) await loadData();
+    if (!error) {
+      setEquipments((rows) => rows.filter((item) => item.id !== equipmentId));
+    }
   };
 
   const uploadFile = async (bucket: string, path: string, file: File) => {
@@ -656,8 +679,18 @@ export default function AdminPage() {
               )}
             </div>
 
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[1250px] text-left text-sm">
+            <div className="overflow-x-auto rounded-xl border border-slate-100">
+              <table className="w-full min-w-[1080px] table-fixed text-left text-sm xl:min-w-0">
+                <colgroup>
+                  <col className="w-[7%]" />
+                  <col className="w-[18%]" />
+                  <col className="w-[16%]" />
+                  <col className="w-[7%]" />
+                  <col className="w-[15%]" />
+                  <col className="w-[15%]" />
+                  <col className="w-[14%]" />
+                  <col className="w-[104px]" />
+                </colgroup>
                 <thead>
                   <tr className="border-b border-slate-200 text-xs uppercase text-slate-400">
                     <th className="p-2">Loại</th>
@@ -667,28 +700,44 @@ export default function AdminPage() {
                     <th className="p-2">Quy cách</th>
                     <th className="p-2">Ghi chú</th>
                     <th className="p-2">Tình trạng</th>
-                    <th className="p-2">Thao tác</th>
+                    <th className="sticky right-0 bg-white p-2 text-center shadow-[-8px_0_12px_-14px_rgba(15,23,42,0.7)]">Thao tác</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
                   {roomEquipments.map((item) => (
                     <tr key={item.id}>
                       <td className="p-2">
-                        <select value={item.type} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, type: e.target.value as EquipmentRow['type'] } : eq))} className="h-9 rounded-lg border border-slate-200 px-2">
+                        <select value={item.type} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, type: e.target.value as EquipmentRow['type'] } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2 text-xs">
                           <option value="TSCĐ">TSCĐ</option>
                           <option value="CCDC">CCDC</option>
                         </select>
                       </td>
-                      <td className="p-2"><input value={item.name} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, name: e.target.value } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2" /></td>
-                      <td className="p-2"><input value={item.code} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, code: e.target.value } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2" /></td>
-                      <td className="p-2"><input type="number" value={item.quantity} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, quantity: Number(e.target.value) } : eq))} className="h-9 w-20 rounded-lg border border-slate-200 px-2" /></td>
-                      <td className="p-2"><input value={item.specification || ''} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, specification: e.target.value || null } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2" /></td>
-                      <td className="p-2"><input value={item.note || ''} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, note: e.target.value || null } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2" /></td>
-                      <td className="p-2"><input value={item.status} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, status: e.target.value } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2" /></td>
-                      <td className="p-2">
-                        <div className="flex gap-2">
-                          <button onClick={() => saveEquipment(item)} className="rounded-lg bg-[#0f766e] px-3 py-2 text-xs font-bold text-white">Lưu</button>
-                          <button onClick={() => deleteEquipment(item.id)} className="rounded-lg bg-rose-50 px-3 py-2 text-xs font-bold text-rose-700">Xóa</button>
+                      <td className="p-2"><input value={item.name} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, name: e.target.value } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2 text-xs" /></td>
+                      <td className="p-2"><input value={item.code} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, code: e.target.value } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2 text-xs" /></td>
+                      <td className="p-2"><input type="number" value={item.quantity} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, quantity: Number(e.target.value) } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2 text-xs" /></td>
+                      <td className="p-2"><input value={item.specification || ''} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, specification: e.target.value || null } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2 text-xs" /></td>
+                      <td className="p-2"><input value={item.note || ''} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, note: e.target.value || null } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2 text-xs" /></td>
+                      <td className="p-2"><input value={item.status} onChange={(e) => setEquipments((rows) => rows.map((eq) => eq.id === item.id ? { ...eq, status: e.target.value } : eq))} className="h-9 w-full rounded-lg border border-slate-200 px-2 text-xs" /></td>
+                      <td className="sticky right-0 bg-white p-2 shadow-[-8px_0_12px_-14px_rgba(15,23,42,0.7)]">
+                        <div className="flex items-center justify-center gap-1.5">
+                          <button
+                            type="button"
+                            onClick={() => saveEquipment(item)}
+                            aria-label={`Lưu thiết bị ${item.code || item.name}`}
+                            title="Lưu"
+                            className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#0f766e] text-sm font-bold text-white transition hover:bg-[#0d9488]"
+                          >
+                            ✓
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => deleteEquipment(item.id)}
+                            aria-label={`Xóa thiết bị ${item.code || item.name}`}
+                            title="Xóa"
+                            className="flex h-9 w-9 items-center justify-center rounded-lg bg-rose-50 text-lg font-bold leading-none text-rose-700 transition hover:bg-rose-100"
+                          >
+                            ×
+                          </button>
                         </div>
                       </td>
                     </tr>
