@@ -1,5 +1,7 @@
+create extension if not exists pgcrypto;
+
 create table if not exists public.teachers (
-  id text primary key,
+  id text primary key default gen_random_uuid()::text,
   name text not null,
   email text,
   phone text,
@@ -10,7 +12,7 @@ create table if not exists public.teachers (
 );
 
 create table if not exists public.rooms (
-  id text primary key,
+  id text primary key default gen_random_uuid()::text,
   room_id text not null unique,
   room_name text not null,
   teacher_id text references public.teachers(id) on delete set null,
@@ -22,7 +24,7 @@ create table if not exists public.rooms (
 );
 
 create table if not exists public.equipments (
-  id text primary key,
+  id text primary key default gen_random_uuid()::text,
   room_id text not null references public.rooms(id) on delete cascade,
   type text not null check (type in ('TSCĐ', 'CCDC')),
   name text not null,
@@ -35,6 +37,10 @@ create table if not exists public.equipments (
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
+
+alter table public.teachers alter column id set default gen_random_uuid()::text;
+alter table public.rooms alter column id set default gen_random_uuid()::text;
+alter table public.equipments alter column id set default gen_random_uuid()::text;
 
 create index if not exists equipments_room_id_idx on public.equipments(room_id);
 create index if not exists rooms_teacher_id_idx on public.rooms(teacher_id);

@@ -41,9 +41,8 @@ export const createSlug = (value: string) =>
     .replace(/(^-|-$)/g, '');
 
 export const createEmptyTeacher = (): TeacherRow => {
-  const id = `teacher-${Date.now()}`;
   return {
-    id,
+    id: '',
     name: '',
     email: null,
     phone: null,
@@ -53,9 +52,8 @@ export const createEmptyTeacher = (): TeacherRow => {
 };
 
 export const createEmptyRoom = (): RoomRow => {
-  const id = `room-${Date.now()}`;
   return {
-    id,
+    id: '',
     room_id: '',
     room_name: '',
     teacher_id: null,
